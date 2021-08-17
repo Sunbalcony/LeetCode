@@ -2,6 +2,8 @@ package main
 
 // TreeNode https://leetcode-cn.com/problems/binary-tree-inorder-traversal/
 
+// N个遍历树的问题 https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/solution/yi-tao-quan-fa-shua-diao-nge-bian-li-shu-de-wen--3/
+
 type TreeNode struct {
 	Val   int
 	Left  *TreeNode
@@ -19,7 +21,7 @@ func InorderTraversal1(root *TreeNode) []int {
 		}
 		res = append(res, root.Val)//2：将该节点的val添加到结果集中
 		root = stack[len(stack)-1]   // 3：回到上一节点
-		 
+
 		stack = stack[:len(stack)-1] //4： 将该节点出栈
 
 		root = root.Right //5：检查向右叶子节点存不存在
