@@ -34,9 +34,6 @@ func maxSlidingWindow1(nums []int, k int) []int {
 		if r >= k-1 { //因为是单调递减队列，又因为window的大小始终为3，所以 window的index=0 就是当前滑动窗口最大的值
 			result = append(result, nums[window[0]])
 		}
-		if window[0]<l{
-			window = window[1:]
-		}
 		if r>k-1{
 			result = append(result,r)
 		}

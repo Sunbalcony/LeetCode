@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eefe5b68-fdfc-4dce-9e41-ba3a22d96be8" name="更改" comment="66 plusOne">
-      <change afterPath="$PROJECT_DIR$/94二叉树中序遍历/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SecondWeek/144二叉树的前序遍历.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SecondWeek/2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SecondWeek/589N叉树的前序遍历.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/239滑动窗口最大值/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/239滑动窗口最大值/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/94二叉树中序遍历/main.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
