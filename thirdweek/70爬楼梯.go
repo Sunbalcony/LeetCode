@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 /*
 https://leetcode-cn.com/problems/climbing-stairs/
 */
@@ -27,7 +29,6 @@ func climbStairs(n int) int {
 		b = ret
 	}
 	print(ret)
-	return ret
 	/*
 		具体分析思路：https://mp.weixin.qq.com/s/MDrjEhSnMnt8JblIsy-ZTg
 		但是重复计算的部分还没搞清楚
@@ -36,6 +37,7 @@ func climbStairs(n int) int {
 }
 
 func main() {
-	climbStairs(10)
+	aa := climbStairs(4)
+	fmt.Println(aa)
 
 }
