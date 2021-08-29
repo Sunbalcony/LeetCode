@@ -40,5 +40,6 @@ func levelOrder(root *TreeNode) [][]int {
 
 func main() {
 	//时间复杂度，每个节点各进出队列一次 因此为O(n)
+	//优秀讲解https://leetcode-cn.com/problems/binary-tree-level-order-traversal/solution/bfs-de-shi-yong-chang-jing-zong-jie-ceng-xu-bian-l/
 
 }
