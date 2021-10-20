@@ -19,6 +19,9 @@ left,right = 0,len(array) -1
 左右边界分别是0和数组长度减1，也就是左右下标值
 while left<=right:
     mid = (left + right)/2
+
+    这个地方计算mid应该写为（right-left）/2 + left 防止越界
+
     if array[mid]==target:
     判断mid是否等于target
         break or return result
@@ -27,6 +30,31 @@ while left<=right:
     else:
         right = mid +1
 
+```
+```go
+package main
+
+func main() {
+	target:= 8
+	var nums = [10]int{0,1,2,3,4,5,6,7,8,9}
+	left:= nums[0]
+	right:=nums[len(nums)-1]
+	for left < right{
+		mid := (left + right) / 2
+		if nums[mid] == target{
+			return nums[mid]
+			
+        }else if nums[mid] < target{
+        	left = mid +1
+        	
+        }else {
+        	right = mid -1
+        }
+		
+    }
+	
+    
+}
 ```
 递增数组,不连续,整体单调递增,查找31
 
