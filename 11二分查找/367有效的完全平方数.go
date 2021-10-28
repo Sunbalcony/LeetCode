@@ -1,5 +1,9 @@
 package main
 
+/*
+判断一个数是否为完全平方数
+*/
+
 func isPerfectSquare(num int) bool {
 	if num < 2 {
 		return true
@@ -7,7 +11,7 @@ func isPerfectSquare(num int) bool {
 	left := 2        //设置作边界为2
 	right := num / 2 //设置右边界为num/2
 	for left <= right {
-		x := left + (right-left)/2
+		x := left + (right-left)/2 //计算中间值 防止越界
 		tmp := x * x
 		if tmp == num {
 			return true
