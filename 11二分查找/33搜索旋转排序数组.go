@@ -20,22 +20,22 @@ package main
 func search(nums []int, target int) int {
 	left := 0              //左边界
 	right := len(nums) - 1 //右边界
-	for left < right {
+	for left <= right {
 		mid := left + (right-left)/2
-		if mid == target {
+		if nums[mid] == target {
 			return mid
 		}
 		//根据nums[mid]和nums[left]的关系判断mid在左边还是右边
-		if nums[mid] > nums[left] {
+		if nums[mid] >= nums[left] {
 			//再判断target是在mid的左边还是右边，从而调整边界left和right
-			if target > nums[left] && target < nums[mid] {
+			if target >= nums[left] && target < nums[mid] {
 				right = mid - 1
 			} else {
 				left = mid + 1
 			}
 
 		} else {
-			if target > nums[mid] && target < nums[right] {
+			if target > nums[mid] && target <= nums[right] {
 				left = mid + 1
 			} else {
 				right = mid - 1
