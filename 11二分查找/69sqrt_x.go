@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 //https://leetcode-cn.com/problems/sqrtx/
 
 //给你一个非负整数 x ，计算并返回 x 的 算术平方根 。
@@ -47,9 +49,10 @@ func mySqrt(x int) int {
 			r = mid - 1
 		}
 	}
+	fmt.Println(ans)
 	return ans
 }
 
 func main() {
-	mySqrt(1)
+	mySqrt(10)
 }
