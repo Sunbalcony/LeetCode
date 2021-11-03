@@ -6,7 +6,7 @@ https://leetcode-cn.com/problems/generate-parentheses/
 
 //按照视频里的思路，复现整个写递归代码的过程
 
-//数字 n 代表生成括号的对数，一队括号由左右括号合并组成，因此一共有2*n的格子需要我们填满括号那么我们先来填满括号
+//数字 n 代表生成括号的对数，一对括号由左右括号合并组成，因此一共有2*n的格子需要我们填满括号那么我们先来填满括号
 
 func addParenthesis(level int, max int, s string) {
 	/*	0是格子的起始位置

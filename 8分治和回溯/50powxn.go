@@ -22,20 +22,27 @@ func myPow(x float64, n int) float64 {
 }
 
 func myPow2(x float64, n int) float64 {
+	//正数
 	if n >= 0 {
 		return quickMul(x, n)
 	}
+	//负数
 	return 1.0 / quickMul(x, -n)
 }
 
 func quickMul(x float64, n int) float64 {
+	//终止条件
 	if n == 0 {
 		return 1
 	}
+	//下一层
 	y := quickMul(x, n/2)
+
+	//偶数
 	if n%2 == 0 {
 		return y * y
 	}
+	//如果是奇数还要多乘一个x
 	return y * y * x
 }
 
