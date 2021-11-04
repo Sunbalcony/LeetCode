@@ -19,11 +19,11 @@ func isValidBST(root *TreeNode) bool {
 		}
 		root = stack[len(stack)-1]
 		stack = stack[:len(stack)-1]
-		if root.Val <= inorder {
+		if root.Val <= inorder { //判断大小
 			return false
 		}
-		inorder = root.Val
-		root = root.Right
+		inorder = root.Val  //更新上一个节点的值
+		root = root.Right //向右边走
 
 	}
 	return true
@@ -43,11 +43,15 @@ func isValidBSTRecursion(root *TreeNode) bool {
 		if root == nil {
 			return true
 		}
+		//左子树
 		l := inorder(root.Left)
+		//处理当前层逻辑：比较大小
 		if root.Val <= tmp {
 			return false
 		}
+		//更新数值
 		tmp = root.Val
+		//右子树
 		r := inorder(root.Right)
 		return l && r
 
