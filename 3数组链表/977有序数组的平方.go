@@ -60,8 +60,16 @@ func sortedSquaresByBubbleSort(nums []int) []int {
 	return nums
 }
 
+func sortedSquaresByDoublePointer(nums []int) int {
+	left := 0  //指向数组最左边
+	right := len(nums) - 1 //指向数组最右边
+
+	//创建一个新数组，存储平方值
+
+}
+
 func main() {
 	fmt.Println(sortedSquaresByInsertionSort(nums977))
 	fmt.Println(sortedSquaresByBubbleSort(nums977))
-	
+
 }
