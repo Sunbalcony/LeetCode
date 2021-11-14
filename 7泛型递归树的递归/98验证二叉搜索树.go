@@ -22,8 +22,8 @@ func isValidBST(root *TreeNode) bool {
 		if root.Val <= inorder { //判断大小
 			return false
 		}
-		inorder = root.Val  //更新上一个节点的值
-		root = root.Right //向右边走
+		inorder = root.Val //更新上一个节点的值
+		root = root.Right  //向右边走
 
 	}
 	return true

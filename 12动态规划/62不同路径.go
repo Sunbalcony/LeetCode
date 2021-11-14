@@ -51,7 +51,7 @@ func uniquePaths(m int, n int) int {
 
 	//第一行都赋予1
 	for i := 0; i < m; i++ {
-		dp[i] = make([]int,n)
+		dp[i] = make([]int, n)
 		dp[i][0] = 1
 	}
 	//第一列都赋予1

@@ -7,25 +7,21 @@ package main
 //抛物线在y轴右侧单调递增，且有上下界0,x 就可以用二分查找
 
 func mySqrt(x int) int {
-	if x==0 ||x==1{
+	if x == 0 || x == 1 {
 		//平方根肯定落在0~1之间的
 		return x
 	}
-	left:=1  //左边界
-	right:=x //右边界
+	left := 1  //左边界
+	right := x //右边界
 
-	mid:=1  //随便初始化一个值
+	mid := 1 //随便初始化一个值
 
-	for left < right{
-		mid = left+(right-left)/2
+	for left < right {
+		mid = left + (right-left)/2
 
 	}
 
-
-
-
 }
-
 
 func main() {
 

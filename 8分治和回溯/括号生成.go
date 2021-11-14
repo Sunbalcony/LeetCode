@@ -32,18 +32,17 @@ func generateParenthesis(left, right int, n int, s string) {
 	//当前层逻辑
 	if left < n {
 		str1 := s + "("
-		generateParenthesis(left+1, right,n, str1)
+		generateParenthesis(left+1, right, n, str1)
 	}
 	if left > right {
 		str2 := s + ")"
-		generateParenthesis(left, right+1,n, str2)
+		generateParenthesis(left, right+1, n, str2)
 	}
 
 }
 
 func main() {
 	//addParenthesis(0, 8, "")
-	generateParenthesis(0,0,4,"")
-
+	generateParenthesis(0, 0, 4, "")
 
 }

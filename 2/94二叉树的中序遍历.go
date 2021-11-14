@@ -19,8 +19,8 @@ func InorderTraversal1(root *TreeNode) []int {
 			stack = append(stack, root) // 1：向栈中压入节点，每次都向左边走，知道到达边界条件root为nil跳出
 			root = root.Left
 		}
-		res = append(res, root.Val)//2：将该节点的val添加到结果集中
-		root = stack[len(stack)-1]   // 3：回到上一节点
+		res = append(res, root.Val) //2：将该节点的val添加到结果集中
+		root = stack[len(stack)-1]  // 3：回到上一节点
 
 		stack = stack[:len(stack)-1] //4： 将该节点出栈
 

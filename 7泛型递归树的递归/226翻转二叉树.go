@@ -34,7 +34,6 @@ func invertTree2(root *TreeNode) *TreeNode {
 	root.Left, root.Right = root.Right, root.Left //交换二叉树左右子树
 	return root
 
-
 }
 
 func main() {

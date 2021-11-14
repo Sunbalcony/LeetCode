@@ -5,14 +5,14 @@ import "fmt"
 var arrays = []int{4, 2, 7, 1, 3, 9, 5, 6, 11, 23, 65, 56, 98, 87, 67, 40}
 
 func main() {
-	n:=len(arrays)
-	if n<1{
+	n := len(arrays)
+	if n < 1 {
 		return
 	}
 	for i := 0; i < n; i++ {
 		for j := 0; j < n-1; j++ {
-			if arrays[j] > arrays[j+1]{
-				arrays[j],arrays[j+1] = arrays[j+1],arrays[j]
+			if arrays[j] > arrays[j+1] {
+				arrays[j], arrays[j+1] = arrays[j+1], arrays[j]
 			}
 		}
 

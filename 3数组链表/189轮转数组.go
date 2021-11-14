@@ -35,15 +35,13 @@ func reserve(a []int) {
 }
 
 func rotate2(nums []int, k int) {
-	newNums :=make([]int,len(nums))
+	newNums := make([]int, len(nums))
 	copy(newNums, nums)
 	for i := 0; i < len(nums); i++ {
 		nums[(i+k)%len(nums)] = newNums[i]
 	}
 
 }
-
-
 
 func main() {
 	rotate(nums, 3)

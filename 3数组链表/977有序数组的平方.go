@@ -64,14 +64,13 @@ func sortedSquaresByBubbleSort(nums []int) []int {
 最关键的点就是：原数组中的元素平方最大值一定产生在原数组的最左边或者最右边。
 */
 
-
 //双指针时间复杂度O(n)
 func sortedSquaresByDoublePointer(nums []int) []int {
 	left := 0              //指向数组最左边
 	right := len(nums) - 1 //指向数组最右边
 
 	//创建一个新数组，存储平方值
-	var newNums = make([]int,len(nums))
+	var newNums = make([]int, len(nums))
 	write := len(nums) - 1 //得到元素平方值，从数组最后面开始写入
 	for left <= right {    //左右指针相遇后遍不再循环
 		//如果左指针数平方大于有指针数平方，就将左指针数平方放入数组最后一个位置
